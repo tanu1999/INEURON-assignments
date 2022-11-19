@@ -1,0 +1,370 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "f68d0c7e-e555-48fb-892a-6a91eee89ef3",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "* is multiplication operator"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "9d961408-9a05-4007-a3ba-168176f05125",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "-87.8 is negative float value"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "e44c5c84-7f47-4f0d-be27-0ddcf07ac7f8",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    " - is substraction operator"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "204b335d-34df-46d4-ad45-2e5fee60b47e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "/ is division operator"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "2ee01cde-8524-4489-8bd5-0feae0992ec6",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "6 is integer"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "9c6e5735-8cbc-4875-aeeb-06b260626922",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "\"hellow\" is string "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "200e48be-7bde-4793-9c17-228c21f04095",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# 2 What is the difference between string and variable?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "586169a6-5cf9-4060-b52e-f1af0995c4d4",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Variables are symbols that you can use to store data in a program."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "51e17a8e-f8c4-4e80-9da0-9787caf12ff9",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Strings are data, so we can use them to fill up a variable."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "4bce52ee-8110-43e7-a5bf-2488e1de0cf9",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Describe three different data types."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "8d579826-996d-46c4-ba4a-86d2bb9735ee",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Following are the standard or built-in data type of Python:\n",
+    "\n",
+    "Numeric\n",
+    "Sequence Type\n",
+    "Boolean\n",
+    "Set\n",
+    "Dictionary"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "f1be1f1f-6a1e-4f00-a61b-0c2005b7c4c0",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "In Python, numeric data type represent the data which has numeric value.\n",
+    "Numeric value can be integer, floating number or even complex numbers.\n",
+    "These values are defined as int, float and complex class in Python."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "405fc4a2-e935-4844-8f23-53983f8febf3",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "In Python, sequence is the ordered collection of similar or different data types.\n",
+    "Sequences allows to store multiple values in an organized and efficient fashion. \n",
+    "There are several sequence types in Python .\n",
+    "\n",
+    "String\n",
+    "List\n",
+    "Tuple\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "3f552ecd-484e-4c3e-bc0e-33fd9037a963",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Data type with one of the two built-in values, True or False. \n",
+    "Boolean objects that are equal to True are truthy (true), and those equal to False are falsy (false).\n",
+    "But non-Boolean objects can be evaluated in Boolean context as well and determined to be true or false.\n",
+    "It is denoted by the class bool.\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "513e3104-6a6e-41cb-bd9e-e146938f596e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#4. What is an expression made up of? What do all expressions do?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "844a53bf-aad1-42e7-8d18-a755b89539a3",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "An expression is a combination of operators and operands that is\n",
+    "interpreted to produce some other value.\n",
+    "In any programming language, an expression is evaluated as per the precedence of its operators"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "d2bca0b8-895d-4fda-8cfe-476799709abd",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#5. This assignment statements, like spam = 10. What is the difference between an\n",
+    "#expression and a statement?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "2e5ea16b-864d-4e56-83a0-738f926bc4fd",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "A statement in Python is not evaluated for some results. \n",
+    "An expression in Python is evaluated for some results. \n",
+    "The execution of a statement changes the state of the variable.\n",
+    "The expression evaluation does not result in any state change.\n",
+    "here 10 is assigned to the variable spam."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "2c2eecf1-b3cb-45f8-ac6c-b663ee93529d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "22\n"
+     ]
+    }
+   ],
+   "source": [
+    "#6. After running the following code, what does the variable bacon contain?\n",
+    "bacon = 22\n",
+    "bacon + 1\n",
+    "print(bacon)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "965497c2-fe2d-4b9c-99ed-e203fa58579c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "23\n"
+     ]
+    }
+   ],
+   "source": [
+    "#6. After running the following code, what does the variable bacon contain?\n",
+    "bacon = 22\n",
+    "bacoon =bacon + 1\n",
+    "print(bacoon)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "6712be0c-1ce7-4e34-9e90-db4a12750c3d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#7. What should the values of the following two term ?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "3ad1e9cd-783c-4aeb-bb61-6c6bbb7395ef",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "spamspamspam\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"spam\" + \"spamspam\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "e70f0d05-8c24-4b1f-a03f-b06c16d8fd8f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "spamspamspam\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"spam\"*3)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "049a9c4e-e4bb-4cdc-840a-df3b47a62feb",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#8. Why is eggs a valid variable name while 100 is invalid?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "940e5d54-d414-4119-b01c-c95b26259fbe",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "variables can not start with numbers(100)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "0cd3fcd8-1289-431d-adf9-6e4b19d2f051",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#9. What three functions can be used to get the integer, floating-point number, or string"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "caef306b-8936-475e-953d-36aeb3c9aeac",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "The int() , float() , and str( ) functions will evaluate to\n",
+    "the integer, floating-point number, and string versions of the value passed to them."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "ee22bfdd-824b-47b7-b55a-09ec8b1e6bb4",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#10. Why does this expression cause an error? How can you fix it?\n",
+    "\"I have eaten  + 99 + burritos"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.6"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
