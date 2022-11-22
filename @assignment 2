@@ -1,0 +1,465 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "bd88cfbb-8e49-4763-b5f7-d805e1733771",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#1.What are the two values of the Boolean data type? How do you write them?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "4011b8e3-ca5b-4458-a1ac-8336930c146e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Python boolean type is one of the built-in data types provided by Python, which represents \n",
+    "one of the two values i.e. True or False. Generally, it is used to represent the truth values of the expressions. \n",
+    "For example, 1==1 is True whereas 2<1 is False. "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "d347e875-f7cc-497c-9b1c-906b8bedea47",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#2. What are the three different types of Boolean operators?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "add11a9e-feab-4de3-a561-fb043ccb7905",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "There are three logical operators that are used to compare values.\n",
+    "They evaluate expressions down to Boolean values, returning either True or False . \n",
+    "These operators are and , or , and not and are defined in the table below."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "d0dc3a6c-420d-4dbe-bb06-9b8fef497779",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "3. Make a list of each Boolean operator& truth tables (i.e. every possible combination of Boolean\n",
+    "values for the operator and what it evaluate )."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "b5705b14-1f16-4b4d-b794-5e2b03d972b3",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "operator   meaning                        example\n",
+    "and\t      True if both are true    \t      x and y\n",
+    "or\t      True if at least one is true\t  x or y\n",
+    "not\t      True only if false\t          not x"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "ed2c6e0f-e8d7-479b-a7ca-e90bb7972767",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#4. What are the values of the following expressions?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "3d6542e6-99a7-4c8d-9d05-7dbaaa2b7a23",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "(5 > 4) and (3 == 5)      out put = False"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "07fabbd6-83af-4f83-be67-554d48eb4a93",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "not(5 > 4 )               out put = False"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "d96faf4d-4b5d-4d15-b366-9ebf00e250e8",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "(5 > 4) or (3 == 5)       out put = True"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "eaf172c7-8bd9-41ed-9904-defcd1916fd8",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "not((5 > 4) or (3 == 5)   out put = False"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "193a8ceb-fc81-4108-81d1-09751460e348",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "(True and True) and (True == False)  out put = False"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "de14e0c0-b2b8-4368-899d-cc6b774e76c3",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "(not False) or (not True)      out put = True"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "e67f6f67-759b-4df0-8001-330d09bd88e7",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#5. What are the six comparison operators?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "be05c493-0533-4f59-be24-fc9e93772e65",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Operator\tName\t                     Example\t\n",
+    "==\t       Equal\t                     x == y\t\n",
+    "!=\t       Not equal\t                 x != y\t\n",
+    ">\t       Greater than                  x > y\t\n",
+    "<\t       Less than\t                 x < y\t\n",
+    ">=\t       Greater than or equal to      x >= y\t\n",
+    "<=\t       Less than or equal to\t     x <= y"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "cff93750-ff4a-465f-af7e-bd76881c2966",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#6. How do you tell the difference between the equal to and assignment operators?Describe a\n",
+    "#condition and when you would use one."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "692deb55-9c83-4cf9-9512-6e90602c84c4",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "The == operator compares the value or equality of two objects,\n",
+    "whereas the Python is operator checks whether two variables point to the same object in memory.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "4aae3898-efd0-4bfb-9478-7b18450955d4",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#7. Identify the three blocks in this code:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "487966a1-d1ef-4d02-8d69-62d716adb0f2",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "ham\n",
+      "spam\n",
+      "spam\n"
+     ]
+    }
+   ],
+   "source": [
+    "spam = 0\n",
+    "if spam == 10:\n",
+    "    print(\"eggs\")\n",
+    "elif spam > 5 :\n",
+    "    print(\"bacon\")\n",
+    "else:\n",
+    "    print(\"ham\")\n",
+    "    print(\"spam\")\n",
+    "    print(\"spam\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "fe657ff8-5ee3-4c6d-99ab-141ea7f4c085",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#8. Write code that prints Hello if 1 is stored in spam, prints Howdy if 2 is stored in spam, and prints\n",
+    "#Greetings! if anything else is stored in spam."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "66e78d72-b597-488e-a895-bb3ab4b726b0",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Input a no. 2\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Howdy\n"
+     ]
+    }
+   ],
+   "source": [
+    "spam = int(input(\"Input a no.\"))\n",
+    "if spam == 1:\n",
+    "    print(\"Hello\")\n",
+    "elif spam == 2:\n",
+    "    print(\"Howdy\")\n",
+    "else:\n",
+    "    print(\"Greetings!\")\n",
+    "        \n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "dcbcc3c0-041e-4e10-b90e-17298945dbea",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#9.If your programme is stuck in an endless loop, what keys you’ll press?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "8330b479-452a-4f18-924c-72f1dd0ddbfe",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "CTRL + C "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "3f5e308d-f338-4b40-b98b-d76cd12b3816",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#10. How can you tell the difference between break and continue?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "e41f4986-1c0b-44bd-b614-3104f6e7f10e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "The main difference between both the statements is that when break keyword comes,\n",
+    "it terminates the execution of the current loop and passes the control over the next loop or main body,\n",
+    "whereas when continue keyword is encountered, \n",
+    "it skips the current iteration and executes the very next iteration in the loop"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "eaa825a7-9d6d-4fda-affe-1ea20adcdc51",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#11. In a for loop, what is the difference between range(10), range(0, 10), and range(0, 10, 1)?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "2cab6b75-3fe4-4e55-a274-7b05496c782d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "range(0,10)  starts with 0 and iterate upto 9 ."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "4261fb95-56e6-4329-ac76-f1265711b70e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "range(10)    as same as range(0,10) ."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "7320750c-8657-4cb4-94ff-7982904d61a5",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "range(0,10,1)  it also gives same result. here 1 means it iterates by one value . "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "8ad26081-e2fa-463f-9d12-efbeca775048",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#12. Write a short program that prints the numbers 1 to 10 using a for loop. Then write an equivalent\n",
+    "#program that prints the numbers 1 to 10 using a while loop."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "1abd6932-9469-4b45-92b4-36e5f146b1a5",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n",
+      "5\n",
+      "6\n",
+      "7\n",
+      "8\n",
+      "9\n",
+      "10\n"
+     ]
+    }
+   ],
+   "source": [
+    "for i in range(1,11):\n",
+    "    print(i)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "c0ad56a8-ce04-407a-8055-a50e3704d899",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n",
+      "5\n",
+      "6\n",
+      "7\n",
+      "8\n",
+      "9\n",
+      "10\n"
+     ]
+    }
+   ],
+   "source": [
+    "i=1\n",
+    "while i<=10:\n",
+    "    print(i)\n",
+    "    i=i+1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "c33f679c-e26d-4d46-9f68-5ff5b67a581d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#13. If you had a function named bacon() inside a module named spam, how would you call it after\n",
+    "#importing spam?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "1d3ed7fb-e90e-440a-bb1f-204db46e3f5a",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "spam.bacon()"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.6"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
