@@ -1,0 +1,176 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "833c93c5-b33a-4318-8d8d-f53e53a216f5",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#1. Write a Python program to print Hello Python?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "2a86792b-5251-47da-ab76-46c9bac93d56",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Hello python\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"Hello python\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "30961b15-635c-4663-9f63-fde4a422577e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#2. Write a Python program to do arithmetical operations addition and division.?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "5b17952f-dcb1-4ab0-966f-2561437e2917",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "6\n",
+      "2.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = 2\n",
+    "b = 4\n",
+    "print(a+b)\n",
+    "print(b/a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "ca4095ee-1d66-4617-bbc4-27272196d2b7",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#3. Write a Python program to find the area of a triangle?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "65358456-9551-4a83-a299-3aad33549154",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      " 8\n",
+      " 9\n",
+      " 3\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "11.832159566199232\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = int(input())\n",
+    "b = int(input())\n",
+    "c = int(input())\n",
+    "s = (a+b+c)/2\n",
+    "area = (s*(s-a)*(s-b)*(s-c))**(0.5)\n",
+    "print(area)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "d757c716-f9cc-4f1a-9a12-fbd969489422",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#4. Write a Python program to swap two variables?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "3df7e828-0660-4e72-8b7f-4f9765c36c22",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "2\n",
+      "2\n",
+      "1\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = 1\n",
+    "b = 2\n",
+    "print(a)\n",
+    "print(b)\n",
+    "temp = a\n",
+    "a = b\n",
+    "b = temp\n",
+    "print( a)\n",
+    "print( b)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "fed08694-a8a2-4377-b1a0-a4bddf25b9ac",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#5. Write a Python program to generate a random number?"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.6"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
