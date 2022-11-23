@@ -1,0 +1,244 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "c6b347cc-9820-4ef2-a2e5-a8ee38d91217",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#1. Write a Python program to convert kilometers to miles? 1km = 0.62137ml"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "f489fb55-742c-4286-bac7-214310eb910c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      " 5\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "3.10689 miles\n"
+     ]
+    }
+   ],
+   "source": [
+    "n = int(input())\n",
+    "result = n*0.621378\n",
+    "print(result,\"miles\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "408fa581-0689-4eee-8274-b0b687daa6c4",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#2. Write a Python program to convert Celsius to Fahrenheit"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "3faa5e11-cc70-4c7a-b97b-d32a3689b9d4",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      " 20\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "68.0 f\n"
+     ]
+    }
+   ],
+   "source": [
+    "c = int(input())\n",
+    "f = (c*(9/5))+32\n",
+    "print(f,\"f\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "5d9eb4c1-ea25-4075-8cab-0dd934ea49d7",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#3. Write a Python program to display calendar?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "1e263fe2-064f-425a-a41b-d0c5aff7f708",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "                                  2023\n",
+      "\n",
+      "      January                   February                   March\n",
+      "Mo Tu We Th Fr Sa Su      Mo Tu We Th Fr Sa Su      Mo Tu We Th Fr Sa Su\n",
+      "                   1             1  2  3  4  5             1  2  3  4  5\n",
+      " 2  3  4  5  6  7  8       6  7  8  9 10 11 12       6  7  8  9 10 11 12\n",
+      " 9 10 11 12 13 14 15      13 14 15 16 17 18 19      13 14 15 16 17 18 19\n",
+      "16 17 18 19 20 21 22      20 21 22 23 24 25 26      20 21 22 23 24 25 26\n",
+      "23 24 25 26 27 28 29      27 28                     27 28 29 30 31\n",
+      "30 31\n",
+      "\n",
+      "       April                      May                       June\n",
+      "Mo Tu We Th Fr Sa Su      Mo Tu We Th Fr Sa Su      Mo Tu We Th Fr Sa Su\n",
+      "                1  2       1  2  3  4  5  6  7                1  2  3  4\n",
+      " 3  4  5  6  7  8  9       8  9 10 11 12 13 14       5  6  7  8  9 10 11\n",
+      "10 11 12 13 14 15 16      15 16 17 18 19 20 21      12 13 14 15 16 17 18\n",
+      "17 18 19 20 21 22 23      22 23 24 25 26 27 28      19 20 21 22 23 24 25\n",
+      "24 25 26 27 28 29 30      29 30 31                  26 27 28 29 30\n",
+      "\n",
+      "        July                     August                  September\n",
+      "Mo Tu We Th Fr Sa Su      Mo Tu We Th Fr Sa Su      Mo Tu We Th Fr Sa Su\n",
+      "                1  2          1  2  3  4  5  6                   1  2  3\n",
+      " 3  4  5  6  7  8  9       7  8  9 10 11 12 13       4  5  6  7  8  9 10\n",
+      "10 11 12 13 14 15 16      14 15 16 17 18 19 20      11 12 13 14 15 16 17\n",
+      "17 18 19 20 21 22 23      21 22 23 24 25 26 27      18 19 20 21 22 23 24\n",
+      "24 25 26 27 28 29 30      28 29 30 31               25 26 27 28 29 30\n",
+      "31\n",
+      "\n",
+      "      October                   November                  December\n",
+      "Mo Tu We Th Fr Sa Su      Mo Tu We Th Fr Sa Su      Mo Tu We Th Fr Sa Su\n",
+      "                   1             1  2  3  4  5                   1  2  3\n",
+      " 2  3  4  5  6  7  8       6  7  8  9 10 11 12       4  5  6  7  8  9 10\n",
+      " 9 10 11 12 13 14 15      13 14 15 16 17 18 19      11 12 13 14 15 16 17\n",
+      "16 17 18 19 20 21 22      20 21 22 23 24 25 26      18 19 20 21 22 23 24\n",
+      "23 24 25 26 27 28 29      27 28 29 30               25 26 27 28 29 30 31\n",
+      "30 31\n",
+      "\n"
+     ]
+    }
+   ],
+   "source": [
+    "import calendar\n",
+    "print(calendar.calendar(2023))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "9b5a8415-ddaf-42cc-bd61-5156c101c1c4",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#4. Write a Python program to solve quadratic equation?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "08faabda-c701-4bc4-9584-372c9d610856",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "The solution are (-3+0j) and (-2+0j)\n"
+     ]
+    }
+   ],
+   "source": [
+    "import cmath\n",
+    "\n",
+    "a = 1\n",
+    "b = 5\n",
+    "c = 6\n",
+    "d = (b**2) - (4*a*c)\n",
+    "\n",
+    "sol1 = (-b-cmath.sqrt(d))/(2*a)\n",
+    "sol2 = (-b+cmath.sqrt(d))/(2*a)\n",
+    "\n",
+    "print('The solution are {} and {}'.format(sol1,sol2))\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "45760b8b-f8fc-4944-aca5-e911712466d1",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#5. Write a Python program to swap two variables without temp variable?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "759b3b91-4c0f-4790-acbf-d7df75e1d8da",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "x = 10\n",
+      "y = 5\n"
+     ]
+    }
+   ],
+   "source": [
+    "x = 5\n",
+    "y = 10\n",
+    "\n",
+    "x, y = y, x\n",
+    "print(\"x =\", x)\n",
+    "print(\"y =\", y)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "65e47c43-f935-4b18-adae-a6dff40d1d28",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.6"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
