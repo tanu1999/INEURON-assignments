@@ -1,0 +1,561 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "d6541cc1-f4dd-424e-994b-06d5e30c99ba",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#1. What exactly is []?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "9da8a1ad-9a16-4449-92a1-5067ec180c11",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    " The empty list value, which is a list value that contains no items."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "21a56f34-15a7-443f-a32a-964263e6bd46",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#2. In a list of values stored in a variable called spam, how would you assign the value hello as the\n",
+    "#third value? (Assume [2, 4, 6, 8, 10] are in spam.)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "97a30346-931c-4f26-a886-76f9474dcc7f",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[2, 4, 'hellow', 6, 8, 10]"
+      ]
+     },
+     "execution_count": 1,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l = [2,4,6,8,10]\n",
+    "l.insert(2,\"hellow\")\n",
+    "l"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "c007c226-a993-4869-88c2-4226eb8b9553",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#3. What is the value of spam[int(int(\"3\" * 2) / 11)]?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "a9408514-cbe8-4f03-a89d-37ab4de013fe",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "4\n"
+     ]
+    }
+   ],
+   "source": [
+    "spam = [1,2,3,4]\n",
+    "a=spam[int(int(\"3\"*2)/11)]\n",
+    "print(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "7fef40fc-40ce-45b3-a962-47f1bff24953",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#4. What is the value of spam[-1]?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "dffba2aa-5d2b-471c-8fc5-a8b96e3185b5",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "4"
+      ]
+     },
+     "execution_count": 5,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "spam[-1]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "c71ee58d-949b-49e1-8476-6508b4d65c2b",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#5. What is the value of spam[:2]?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "ca2d22f9-49db-4bd3-949f-9fd465a6af51",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 2]"
+      ]
+     },
+     "execution_count": 6,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "spam[:2]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "98866942-aacc-43f6-8059-66f66a032a1b",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Let pretend bacon has the list [3.14,cat, 11, cat,39,True] for the next three questions."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "de52db85-10ce-433b-87b2-5cf1cd2b3e11",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "bacon = [3.14,'cat',11,'cat',True,99,99,99,99]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "id": "3921a7f2-76e2-48f5-a604-e00b12d75658",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[3.14, 'cat', 11, 'cat', True, 99, 99, 99, 99]"
+      ]
+     },
+     "execution_count": 25,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "bacon"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "id": "32c17434-008d-47d0-a070-a284740e966b",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#6. What is the value of bacon.index(cat)?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "id": "68752894-ee7d-4ab7-9a54-4276f7bfe4e1",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "1"
+      ]
+     },
+     "execution_count": 27,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "bacon.index('cat')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "25695621-d43f-47c3-9922-bc7bd7ae04c2",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#7. How does bacon.append(99) change the look of the list value in bacon?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 39,
+   "id": "d073bb08-1955-4266-8a6d-a7bb77415dca",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[3.14, 'cat', 11, 'cat', True, 99, 99, 99, 99, 99]"
+      ]
+     },
+     "execution_count": 39,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "bacon.append(99)\n",
+    "bacon"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "92353736-01c9-4327-b06d-ca071850fb24",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#8. How does bacon.remove('cat') change the look of the list in bacon?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 40,
+   "id": "2fe3a6c4-baeb-4377-a6d1-64c434d56cc3",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[3.14, 11, 'cat', True, 99, 99, 99, 99, 99]"
+      ]
+     },
+     "execution_count": 40,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "bacon.remove('cat')\n",
+    "bacon"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "ee723e48-5a0a-4bba-9495-72097245e01f",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#9. What are the list concatenation and list replication operators?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "01dc65d2-b0a4-4e43-b0f6-3c703eca7f59",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "The operator for list concatenation is +\n",
+    "while the operator for replication is *"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "b3d2b1a0-a950-428e-9ad2-89b4f16928f4",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#10. What is difference between the list methods append() and insert()?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "f79d3364-a68d-4c25-ae4f-db7014b5a3fd",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "The only difference between append() and insert() is that insert function \n",
+    "allows us to add a specific element at a specified index of the list unlike append()\n",
+    "where we can add the element only at end of the list."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "8d796263-e210-461f-9a4b-6b5f79b7dcfc",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#11. What are the two methods for removing items from a list?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 41,
+   "id": "2a64364b-5c44-4936-85c9-12eac4b42015",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 3, 4]"
+      ]
+     },
+     "execution_count": 41,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l = [1,2,3,4]\n",
+    "l.remove(2)\n",
+    "l"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 42,
+   "id": "0911b0fe-0341-4e67-8dcc-5c89a8e50da6",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 3]"
+      ]
+     },
+     "execution_count": 42,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l.pop()\n",
+    "l"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "d0a5156d-0a75-4d22-8258-b0f6bf8d3eb8",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#12. Describe how list values and string values are identical."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "93dd44da-ae53-4642-a99f-2b8a633d065d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "A string is a sequence of characters.\n",
+    "A list a sequence of values which can be characters, integers "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "4500c3ce-0d8e-4a7a-9c0e-0faa1807f594",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#13. What is the difference between tuples and lists?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "4591f021-40d8-4a3c-916d-f3a166fdc85b",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "The list is dynamic, whereas the tuple has static characteristics.\n",
+    "This means that lists can be modified whereas tuples cannot be modified, \n",
+    "the tuple is faster than the list because of static in nature.\n",
+    "Lists are denoted by the square brackets but tuples are denoted as parenthesis."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "6e0b7e08-64a0-4aa9-b83d-2812737cc1db",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#14. How do you type a tuple value that only contains the integer 42?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 43,
+   "id": "0b8a61de-a356-407e-aef4-fcbc1247a0ab",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "42"
+      ]
+     },
+     "execution_count": 43,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "tuple = (42)\n",
+    "tuple"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "115ab17b-79b7-4eff-9544-206c379148b8",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#15. How do you get a list value in tuple form? How do you get a tuple values in  list form?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 55,
+   "id": "de36fe30-a6d4-4932-a85c-6b272b52c6a7",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "TypeError",
+     "evalue": "'int' object is not callable",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+      "Cell \u001b[0;32mIn [55], line 4\u001b[0m\n\u001b[1;32m      1\u001b[0m sample_list \u001b[38;5;241m=\u001b[39m [\u001b[38;5;124m'\u001b[39m\u001b[38;5;124mCompile\u001b[39m\u001b[38;5;124m'\u001b[39m, \u001b[38;5;124m'\u001b[39m\u001b[38;5;124mWith\u001b[39m\u001b[38;5;124m'\u001b[39m, \u001b[38;5;124m'\u001b[39m\u001b[38;5;124mFavtutor\u001b[39m\u001b[38;5;124m'\u001b[39m]\n\u001b[1;32m      3\u001b[0m \u001b[38;5;66;03m#convert list into tuple\u001b[39;00m\n\u001b[0;32m----> 4\u001b[0m tuple1 \u001b[38;5;241m=\u001b[39m \u001b[38;5;28;43mtuple\u001b[39;49m\u001b[43m(\u001b[49m\u001b[43msample_list\u001b[49m\u001b[43m)\u001b[49m\n\u001b[1;32m      6\u001b[0m \u001b[38;5;28mprint\u001b[39m(tuple1)\n",
+      "\u001b[0;31mTypeError\u001b[0m: 'int' object is not callable"
+     ]
+    }
+   ],
+   "source": [
+    "sample_list = ['Compile', 'With', 'Favtutor']\n",
+    "tuple1 = tuple(sample_list)\n",
+    "\n",
+    "print(tuple1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 56,
+   "id": "ec7d0a28-409a-47cc-92f6-ac17173d6606",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "TypeError",
+     "evalue": "'str' object is not callable",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+      "Cell \u001b[0;32mIn [56], line 2\u001b[0m\n\u001b[1;32m      1\u001b[0m sample_list2 \u001b[38;5;241m=\u001b[39m (\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mhari\u001b[39m\u001b[38;5;124m\"\u001b[39m,\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mgiri\u001b[39m\u001b[38;5;124m\"\u001b[39m)\n\u001b[0;32m----> 2\u001b[0m list_1 \u001b[38;5;241m=\u001b[39m \u001b[38;5;28;43mlist\u001b[39;49m\u001b[43m(\u001b[49m\u001b[43msample_list2\u001b[49m\u001b[43m)\u001b[49m\n\u001b[1;32m      3\u001b[0m \u001b[38;5;28mprint\u001b[39m(list_1)\n",
+      "\u001b[0;31mTypeError\u001b[0m: 'str' object is not callable"
+     ]
+    }
+   ],
+   "source": [
+    "sample_list2 = (\"hari\",\"giri\")\n",
+    "list_1 = list(sample_list2)\n",
+    "print(list_1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "7536e02b-e6e9-4d04-a2da-d1911a0c2313",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#17. How do you distinguish between copy.copy() and copy.deepcopy()?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "e9ff3a1f-a2c8-4e34-99f6-eedbead90d24",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "The copy() returns a shallow copy of the list\n",
+    "deepcopy() returns a deep copy of the list. "
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.6"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
