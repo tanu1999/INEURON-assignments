@@ -1,0 +1,326 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "e33949e6-3ec4-4474-aed1-6480908bcd2c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#1. Why are functions advantageous to have in your programs?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "02381073-eadc-411b-afdc-454d5a8f21fc",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "The use of functions makes a program more readable.\n",
+    "It's frequently difficult to read a large program.\n",
+    "Breaking the code down into smaller functions keeps the program structured, understandable, and reusable.\n",
+    "The function can be reused countless times after it is defined"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "b26cc8c2-d3e9-48cc-8a64-6cba02a1f749",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#2. When does the code in a function run: when it specified or when it called?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "0ffa193c-7f02-43fa-b5a6-ce297244f9f3",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "The code in a function executes when the function is called, not when the function is defined.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "e478af97-4f61-4bc0-9c09-2977b72dd4af",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#3. What statement creates a function?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "d3c20a14-8ea1-4574-a627-25c08460c9ce",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "A function is defined by using the def keyword, followed by a name of your choosing,\n",
+    "followed by a set of parentheses which hold any parameters the function will take (they can be empty),\n",
+    "and ending with a colon."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "b9a77bf5-51c0-4b01-b640-1ac4910da830",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#4. What is the difference between a function and a function call?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "b8ee7f49-9291-4042-88a3-2d1ba0bb9eec",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "A function is a block of code that does a particular operation and returns a result. \n",
+    "It usually accepts inputs as parameters and returns a result. The parameters are not mandatory.\n",
+    "A function call is the code used to pass control to a function."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "f7a9c4e2-2105-4165-b33a-a5084328b18a",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#5. How many global scopes are there in a Python program? How many local scopes?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "ab047002-a42d-49a1-9b02-023092b44128",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "At any given time during execution, you'll have at most four active Python scopes—local,\n",
+    "enclosing, global, and built-in—depending on where you are in the code.\n",
+    "On the other hand, you'll always have at least two active scopes,\n",
+    "which are the global and built-in scopes."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "70f56de9-2216-4d2d-8832-81e16a631df4",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#6. What happens to variables in a local scope when the function call returns?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "1e3a5666-9030-463e-916f-af7ce70df078",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "When the execution of the function terminates (returns), the local variables are destroyed.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "40bd2a75-08e8-41e7-a6a6-78bde72ea639",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#7. What is the concept of a return value? Is it possible to have a return value in an expression?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "d38a8a79-c12d-4a99-80e3-ad346d43dc72",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "A return statement is used to end the execution of the function call and “returns” the result\n",
+    "(value of the expression following the return keyword) to the caller.\n",
+    "The statements after the return statements are not executed.\n",
+    "If the return statement is without any expression, then the special value None is returned."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "6003d9f8-b25c-4604-a971-dab3eeda7445",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#8. If a function does not have a return statement, what is the return value of a call to that function?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "948ef12d-e05e-403f-a79a-bf540aea4592",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "If no return statement appears in a function definition, \n",
+    "control automatically returns to the calling function after the last statement of the called function is executed.\n",
+    "In this case, the return value of the called function is undefined."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "9d66bcf0-cc14-457a-9f8e-958ce1bcda3a",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#9. How do you make a function variable refer to the global variable?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "a6873aab-c70b-491d-9c7e-8d268ff2168a",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Normally, when you create a variable inside a function, that variable is local,\n",
+    "and can only be used inside that function.\n",
+    "To create a global variable inside a function, you can use the global keyword."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "43a29354-5712-4e64-9b4d-ff900260c81a",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#10. What is the data type of None?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "899e660d-2d46-439e-8842-1c4c5620e29c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    " The None keyword is used to define a null value, or no value at all.\n",
+    "None is not the same as 0, False, or an empty string.\n",
+    "None is a data type of its own (NoneType) and only None can be None.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "50fe0739-4376-4c09-bec0-48bccc4cd0f3",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#11. What does the sentence import areallyourpetsnamederic do?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "b03eb79a-84e0-4fea-8c88-228438af908b",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    " That import statement imports a module named areallyourpetsnamederic. \n",
+    "    (This isn't a real Python module, by the way.)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "9a1dce61-9bcc-490c-bf62-f462da80c0d6",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#12. If you had a bacon() feature in a spam module, what would you call it after importing spam?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "6172e2b7-08b1-48de-a867-98bba5dfd17c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "spam.bacon()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "889c59e4-c570-4e98-819e-5d35876db86b",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#13. What can you do to save a programme from crashing if it encounters an error?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "fb99699a-873e-495e-adde-09d54c1fdfd4",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "In Python, we use the try and except statements to handle exceptions. \n",
+    "Whenever the code breaks down, an exception is thrown without crashing the program."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "ea5b6742-3279-4f72-ade1-4ca373b00fdc",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#14. What is the purpose of the try clause? What is the purpose of the except clause?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "368a548a-6fc2-42e9-866e-b2fb3f700d8b",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    " try block lets you test a block of code for errors."
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.6"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
