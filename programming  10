@@ -1,0 +1,575 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "b9e476ad-64aa-406e-a445-0d90e85083b0",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "1. Write a Python program to find sum of elements in list?\n",
+    "\n",
+    "2. Write a Python program to Multiply all numbers in the list?\n",
+    "3. Write a Python program to find smallest number in a list?\n",
+    "4. Write a Python program to find largest number in a list?\n",
+    "5. Write a Python program to find second largest number in a list?\n",
+    "6. Write a Python program to find N largest elements from a list?\n",
+    "7. Write a Python program to print even numbers in a list?\n",
+    "8. Write a Python program to print odd numbers in a List?\n",
+    "9. Write a Python program to Remove empty List from List?\n",
+    "10. Write a Python program to Cloning or Copying a list?\n",
+    "11. Write a Python program to Count occurrences of an element in a list?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "c27f92eb-965c-438e-8a36-227b0a1157b9",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#1. Write a Python program to find sum of elements in list?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "7934665f-8afd-4f1c-be8d-e016f0e9910c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "80\n"
+     ]
+    }
+   ],
+   "source": [
+    "l=[10,10,20,40]\n",
+    "sum=0\n",
+    "for ele in range(0,len(l)):\n",
+    "    sum=sum+l[ele]\n",
+    "print(sum)\n",
+    "\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "6757fd75-9ba5-4a5b-8efc-7f47b9fa2685",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#2. Write a Python program to Multiply all numbers in the list?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "4f107858-ef35-43d5-89f3-c055d60830f5",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[10, 10, 20, 40]"
+      ]
+     },
+     "execution_count": 17,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "id": "90287394-18cc-4c40-80b6-9e956756f85b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "80000\n"
+     ]
+    }
+   ],
+   "source": [
+    "multi=1\n",
+    "for ele in range(0,len(l)):\n",
+    "    multi=multi*l[ele]\n",
+    "print(multi)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "552b476e-bbf8-43aa-894a-f7f03bce977b",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#3. Write a Python program to find smallest number in a list?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "id": "33c78059-8590-4578-8e51-68c1c195d5b4",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[10, 10, 20, 40]"
+      ]
+     },
+     "execution_count": 24,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "id": "d25fb665-f24d-43d6-b7a2-2df19215a597",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "10\n"
+     ]
+    }
+   ],
+   "source": [
+    "min=l[0]\n",
+    "while min>l[i]:\n",
+    "    min=l[i]\n",
+    "print(min)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "id": "ab53cf67-8f12-44ec-997f-6b4a363e74cd",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "l=[5,3,8,1]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 34,
+   "id": "0f68c804-7756-4921-ad70-dbe5600ea168",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n"
+     ]
+    }
+   ],
+   "source": [
+    "min=l[0]\n",
+    "while min>l[i]:\n",
+    "    min=l[i]\n",
+    "    i=+1\n",
+    "print(min)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "816ed564-4ea2-4ed2-a9f0-584f758490c3",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#4. Write a Python program to find largest number in a list?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 38,
+   "id": "897e5874-0f63-46e2-b965-61f4abf8dd20",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "8\n"
+     ]
+    }
+   ],
+   "source": [
+    "max=l[0]\n",
+    "for i in range(0,len(l)):\n",
+    "    if max<l[i]:\n",
+    "        max=l[i]\n",
+    "print(max)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 33,
+   "id": "c03e6138-e7ba-40f9-82be-ae50d72ce9f3",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[5, 3, 8, 1]"
+      ]
+     },
+     "execution_count": 33,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "e6d4c159-109b-4e1a-9893-ed9b1c118a0d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#5. Write a Python program to find second largest number in a list?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 43,
+   "id": "d1ae4f03-bb7d-46c2-9781-ca437e3a3842",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[5, 3, 8, 1]"
+      ]
+     },
+     "execution_count": 43,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 45,
+   "id": "e50e1328-587a-45a3-b569-5630efff64f4",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "l.sort()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 46,
+   "id": "0d9dc3a2-866d-4ba9-a4ed-c08bfa6a0182",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 3, 5, 8]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(l)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 47,
+   "id": "f3ea5143-15d7-45bd-b6a7-fec116fc371c",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "5"
+      ]
+     },
+     "execution_count": 47,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l[-2]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "c65e049c-b4f9-4e00-a119-11baffb24573",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#6. Write a Python program to find N largest elements from a list?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 50,
+   "id": "6b5bf122-d613-4770-8272-09dbfd7388fd",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 2, 4, 6, 9, 9, 9, 9, 9]\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "5"
+      ]
+     },
+     "execution_count": 50,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l=[1,2,4,6,9,9,9,9,9]\n",
+    "l.sort()\n",
+    "print(l)\n",
+    "l[-1]\n",
+    "l.count(l[-1])\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "1614d8b7-a07c-45b7-b903-29267db28ad1",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#7. Write a Python program to print even numbers in a list?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 51,
+   "id": "eadd711f-b570-46a4-a6c8-c1c2a4ae1c14",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "2\n",
+      "10\n",
+      "4\n",
+      "6\n",
+      "8\n"
+     ]
+    }
+   ],
+   "source": [
+    "l=[1,2,10,4,5,6,7,8,9]\n",
+    "for ele in l:\n",
+    "    if ele%2==0:\n",
+    "        print(ele)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "84c913f9-3891-4554-bdd3-44dabf5bc175",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#8. Write a Python program to print odd numbers in a List?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 52,
+   "id": "cac5fac1-3e05-46dd-b3c4-492715d79507",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 2, 10, 4, 5, 6, 7, 8, 9]"
+      ]
+     },
+     "execution_count": 52,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 53,
+   "id": "1ba7509e-7d9b-4e96-a325-95a1e8a26455",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 2, 4, 5, 6, 7, 8, 9, 10]\n"
+     ]
+    }
+   ],
+   "source": [
+    "l.sort()\n",
+    "print(l)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 55,
+   "id": "ccaa78be-ad5f-40e3-a4aa-2c5033c0c71c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "5\n",
+      "7\n",
+      "9\n"
+     ]
+    }
+   ],
+   "source": [
+    "for ele in l:\n",
+    "    if ele%2!=0:\n",
+    "        print(ele)\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "34616440-f747-4629-bb6d-1fa36e40ce04",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#9. Write a Python program to Remove empty List from List?\n",
+    "10. Write a Python program to Cloning or Copying a list?\n",
+    "11. Write a Python program to Count occurrences of an element in a list?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 58,
+   "id": "0d0dbff2-f261-4330-a14e-4253194f46ff",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 2, 3, 5, 2]\n"
+     ]
+    }
+   ],
+   "source": [
+    "l=[1,2,3,[],5,2]\n",
+    "l.remove([])\n",
+    "print(l)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 62,
+   "id": "ba12301a-1afb-4912-a6b2-02a8d70211df",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 2, [], 5]"
+      ]
+     },
+     "execution_count": 62,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "59145680-ed10-4d43-b4f2-3ff074de551a",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#11. Write a Python program to Count occurrences of an element in a list?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "1f7ca600-9fb6-4ce3-82b2-5b05f499c345",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "l=[1,2,3,2,5,1]\n",
+    "\n"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.6"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
