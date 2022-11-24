@@ -1,0 +1,366 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "a85d7172-f165-4298-bbe4-f0c333d4d7e9",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#1. What does an empty dictionary&#39;s code look like?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "3d162761-2945-41e7-bd73-e5affb660c45",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "dict"
+      ]
+     },
+     "execution_count": 1,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "d={}\n",
+    "type(d)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "0aa9334e-1c77-4eb6-9fde-c11cdee2b685",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#2. What is the value of a dictionary value with the key &#39;foo&#39; and the value 42?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "6e2325a2-f7d7-4f9f-a439-127a5477930a",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'foo': 42}"
+      ]
+     },
+     "execution_count": 2,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "d={'foo':42}\n",
+    "d"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "43539469-0cff-405a-8ce3-b3f4ae363eda",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "42"
+      ]
+     },
+     "execution_count": 4,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "d['foo']"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "cebb8545-865b-4089-9d2b-03f6e0d70f43",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#3. What is the most significant distinction between a dictionary and a list?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "721212c2-0aac-4af6-bdd0-ba038c9f028c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "list has elements and dictionary has key : value pairs"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "3ee6c77f-0571-48a8-834e-015592429098",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#4. What happens if you try to access spam[foo] if spam is {bar: 100}?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "942591a7-e32d-4ab3-a1d9-6dd4b41a3620",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "KeyError",
+     "evalue": "'foo'",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mKeyError\u001b[0m                                  Traceback (most recent call last)",
+      "Cell \u001b[0;32mIn [5], line 2\u001b[0m\n\u001b[1;32m      1\u001b[0m d \u001b[38;5;241m=\u001b[39m {\u001b[38;5;124m'\u001b[39m\u001b[38;5;124mbar\u001b[39m\u001b[38;5;124m'\u001b[39m:\u001b[38;5;241m100\u001b[39m}\n\u001b[0;32m----> 2\u001b[0m \u001b[43md\u001b[49m\u001b[43m[\u001b[49m\u001b[38;5;124;43m'\u001b[39;49m\u001b[38;5;124;43mfoo\u001b[39;49m\u001b[38;5;124;43m'\u001b[39;49m\u001b[43m]\u001b[49m\n",
+      "\u001b[0;31mKeyError\u001b[0m: 'foo'"
+     ]
+    }
+   ],
+   "source": [
+    "spam = {'bar':100}\n",
+    "spam['foo']"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "7ced8a2e-92a3-4e9e-9fdc-377f7c7f1e1d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#5. If a dictionary is stored in spam, what is the difference between the expressions &#39;cat&#39; in spam and\n",
+    "&#39;cat&#39; in spam.keys()?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "0ab6d82f-2cc8-452e-9678-9a1f7d3c8076",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "There is no difference. The in operator checks whether a value exists as a key in the dictionary. \n",
+    "'cat' in spam checks whether there is a 'cat' key in the dictionary,\n",
+    "while 'cat' in spam. values() checks whether there is a value 'cat' for one of the keys in spam ."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "4cadd317-d72c-4982-bea0-378020394a23",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 7,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "spam={'cat':1,'bat':2}\n",
+    "'cat' in spam"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "6d40c061-a55c-4e07-b21a-391f107f7651",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 9,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "'cat' in spam.keys()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "5314f317-2966-4d69-bb50-2fe5132e1498",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#6. If a dictionary is stored in spam, what is the difference between the expressions &#39;cat&#39; in spam and\n",
+    "&#39;cat&#39; in spam.values()?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "d90d9e22-9f0e-4d53-ae0b-33c0d9992e3e",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 10,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "spam={'cat':1,'bat':2}\n",
+    "'cat' in spam"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "a7b7b664-2305-4099-a017-3f2814e188c8",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "False"
+      ]
+     },
+     "execution_count": 11,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "'cat' in spam.values()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "a7b26020-bfa7-45b0-854b-24d14e709837",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#7. What is a shortcut for the following code?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "b5c925d4-6d29-4049-a669-0e972eb6fe0e",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "False"
+      ]
+     },
+     "execution_count": 19,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "spam={'colour': \"black\",'a':2}\n",
+    "'colour' not in spam"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "033d7094-e18e-4747-b1c3-13150494f4cc",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#8. How do you pretty print dictionary values using which module and function?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "3ce8a675-2f61-4967-aadb-432736d23607",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "TypeError",
+     "evalue": "test() takes 0 positional arguments but 1 was given",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+      "Cell \u001b[0;32mIn [22], line 3\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[38;5;28;01mdef\u001b[39;00m \u001b[38;5;21mtest\u001b[39m(\u001b[38;5;241m*\u001b[39m\u001b[38;5;241m*\u001b[39margs):\n\u001b[1;32m      2\u001b[0m     \u001b[38;5;28;01mreturn\u001b[39;00m args\n\u001b[0;32m----> 3\u001b[0m \u001b[43mtest\u001b[49m\u001b[43m(\u001b[49m\u001b[43m{\u001b[49m\u001b[38;5;124;43m'\u001b[39;49m\u001b[38;5;124;43mh\u001b[39;49m\u001b[38;5;124;43m'\u001b[39;49m\u001b[43m:\u001b[49m\u001b[38;5;124;43m\"\u001b[39;49m\u001b[38;5;124;43mpretty print\u001b[39;49m\u001b[38;5;124;43m\"\u001b[39;49m\u001b[43m}\u001b[49m\u001b[43m)\u001b[49m\n",
+      "\u001b[0;31mTypeError\u001b[0m: test() takes 0 positional arguments but 1 was given"
+     ]
+    }
+   ],
+   "source": [
+    "def test(**args):\n",
+    "    return args\n",
+    "test({'h':\"pretty print\"})\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "db7b52a0-9f2e-419a-a134-74a33bc3b804",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "9fecd7a8-1756-4b1d-aa99-045e0ec951ee",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.6"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
