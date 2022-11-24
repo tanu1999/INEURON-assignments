@@ -1,0 +1,308 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "71e219b3-2eef-4f4d-9340-05499d6f4f96",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#1. Write a Python Program to Find LCM?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "e68328ac-3678-439f-8559-9b3e5159dcf7",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      " 24\n",
+      " 36\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "72\n"
+     ]
+    }
+   ],
+   "source": [
+    "n=int(input())\n",
+    "m=int(input())\n",
+    "if n>m:\n",
+    "    greater = n\n",
+    "else:\n",
+    "    greater = m\n",
+    "while (True):\n",
+    "    if greater%n==0 and greater%m==0:\n",
+    "        lcm=greater\n",
+    "        break\n",
+    "    greater+=1\n",
+    "print(greater)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "f3d44c0f-1615-40b2-b8b5-1de6abeaf489",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#2. Write a Python Program to Find HCF?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "d2221ad0-0a13-4174-aeb9-891e1aeecadc",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      " 30\n",
+      " 50\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "10\n"
+     ]
+    }
+   ],
+   "source": [
+    "n=int(input())\n",
+    "m=int(input())\n",
+    "if n>m:\n",
+    "    smaller = m\n",
+    "else:\n",
+    "    smaller = n\n",
+    "for i in range(1,smaller+1):\n",
+    "    if n%i==0 and m%i==0:\n",
+    "        hcf = i\n",
+    "print(hcf)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "4d7a8a49-67ad-434f-b7ff-5a7d6bdde360",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#3. Write a Python Program to Convert Decimal to Binary, Octal and Hexadecimal?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "14aae119-0a57-4f6e-8a64-bb4ff76e02fb",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      " 110\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['0', '1', '1']\n",
+      "6\n"
+     ]
+    }
+   ],
+   "source": [
+    "n=input()\n",
+    "sum=0\n",
+    "l=list(n)\n",
+    "l.reverse()\n",
+    "print(l)\n",
+    "for i in range(len(l)):\n",
+    "    sum=sum+int(l[i])*2**i\n",
+    "print(sum)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "0e6cf197-b2cf-4b48-87d3-c6d4719bc9ac",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      " 6\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "110"
+     ]
+    }
+   ],
+   "source": [
+    "n=int(input())\n",
+    "l=[]\n",
+    "while n!=0:\n",
+    "    sum=n%2\n",
+    "    n=n//2\n",
+    "    l.append(sum)\n",
+    "l.reverse()\n",
+    "for i in l:\n",
+    "    print(i,end=\"\")\n",
+    "    \n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "bc3847ec-d975-4881-9bcf-e092241cb970",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#4. Write a Python Program To Find ASCII value of a character?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "18085cc5-4f0a-4024-8236-944759eff47f",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "112"
+      ]
+     },
+     "execution_count": 19,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "c=\"p\"\n",
+    "ord(c)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "12a4f4ef-8651-4b71-8315-2e25e55309a6",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#5. Write a Python Program to Make a Simple Calculator with 4 basic mathematical operations?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "610f2312-8d8b-48fb-b07b-8e91b00e4bfb",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter a 1/2/3/4 2\n",
+      " 5\n",
+      " 3\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "5.0 - 3.0 = 2.0\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "yes/no no\n"
+     ]
+    }
+   ],
+   "source": [
+    "def add(x,y):\n",
+    "    return x+y\n",
+    "def substract(x,y):\n",
+    "    return x-y\n",
+    "def multiple(x,y):\n",
+    "    return x*y\n",
+    "def divide(x,y):\n",
+    "    return x/y\n",
+    "while True :\n",
+    "    choice = input(\"enter a 1/2/3/4\")\n",
+    "    if choice in (\"1\",\"2\",\"3\",\"4\"):\n",
+    "        num1=float(input())\n",
+    "        num2=float(input())\n",
+    "        if choice==\"1\":\n",
+    "            print(num1,\"+\",num2,\"=\",add(num1,num2))\n",
+    "        elif choice==\"2\":\n",
+    "            print(num1,\"-\",num2,\"=\",substract(num1,num2))\n",
+    "        elif choice==\"3\":\n",
+    "            print(num1,\"*\",num2,\"=\",multiple(num1,num2))\n",
+    "        elif choice==\"4\":\n",
+    "            print(num1,\"/\",num2,\"=\",multiple(num1,num2))\n",
+    "        next_calculation = input(\"yes/no\")\n",
+    "        if next_calculation == \"no\":\n",
+    "            break\n",
+    "    else:\n",
+    "        print(\"invalid input\")\n",
+    "            \n",
+    "            \n",
+    "            \n",
+    "            \n",
+    "            \n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "494b502d-cfba-477e-b850-f21f7f27ca42",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.6"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
