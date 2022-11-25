@@ -1,0 +1,276 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "73eb40a5-68d0-4943-b02a-77da2f31e111",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "efd40a72-73a5-4d9f-bbfc-398e2196052a",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#1. Write a Python program to find words which are greater than given length k?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "f4dae9ab-cfaa-4d63-97a4-51c53ea5e40e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "sunny\n",
+      "harish\n",
+      "appala naidu\n"
+     ]
+    }
+   ],
+   "source": [
+    "l=[\"sunny\",\"harish\",\"appala naidu\",\"hii\"]\n",
+    "for i in range(0,len(l)):\n",
+    "    if len(l[i])>len(l):\n",
+    "        print(l[i])\n",
+    "        \n",
+    "          "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "1f6c525a-9691-4f51-bf3e-6d11f56af6a6",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#2. Write a Python program for removing i-th character from a string?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "f8abd043-10fa-44d0-a48e-2722bfe46603",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'harsh'"
+      ]
+     },
+     "execution_count": 10,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "def remove(str_1,i):\n",
+    "    a=str_1[0:i]\n",
+    "    b=str_1[i+1:]\n",
+    "    return a+b\n",
+    "remove(\"harish\",3)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "4f2cec71-b4c8-447c-857b-90d644169cc0",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#3. Write a Python program to split and join a string?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "1d6c9400-f951-41c4-8659-e763ee2128cc",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['vangapandu', 'harish', 'naidu']\n"
+     ]
+    }
+   ],
+   "source": [
+    "str_2=\"vangapandu harish naidu\"\n",
+    "update=str_2.split(\" \")\n",
+    "print(update)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "28fe0f2b-a00d-4e3c-bbbb-471de4a27d74",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'v*a*n*g*a*p*a*n*d*u* *h*a*r*i*s*h* *n*a*i*d*u'"
+      ]
+     },
+     "execution_count": 14,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "\"*\".join(str_2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "a8785946-1c5e-4bca-87c1-df78f2fd5727",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#4. Write a Python to check if a given string is binary string or not?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "52003dfa-162c-4a00-8328-729c148cae01",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter a string : 101\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "is binary\n"
+     ]
+    }
+   ],
+   "source": [
+    "n=input(\"enter a string :\")\n",
+    "flag=0\n",
+    "for i in n:\n",
+    "    if i==\"0\" and i==\"1\":\n",
+    "        flag=1\n",
+    "        break\n",
+    "        \n",
+    "if flag==0:\n",
+    "    print(\"is binary\")\n",
+    "else:\n",
+    "    print(\"not a binary\")\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "f0c9d1a7-8a75-45d3-a8e7-19f5f3249b2c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#5. Write a Python program to find uncommon words from two Strings?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 34,
+   "id": "ef666a50-d9c7-4276-8743-d0b61cfd2278",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['h', 'n', 'g']\n"
+     ]
+    }
+   ],
+   "source": [
+    "str1=\"harish\"\n",
+    "str2=\"narsing\"\n",
+    "l=[]\n",
+    "for ele in str1:\n",
+    "    if ele  not in str2:\n",
+    "        l.append(ele)\n",
+    "for i in str2:\n",
+    "    if i not in str1:\n",
+    "        l.append(i)\n",
+    "l=list(set(l))\n",
+    "print(l) \n",
+    "        \n",
+    "        "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "83e2a3f3-949e-4489-a79c-e9504888d873",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#6. Write a Python to find all duplicate characters in string?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 42,
+   "id": "ddead7f7-eebb-4bc5-8a1f-36769ed812d7",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['a', 'n', ' ', 'u', 'h', 'i', 'd']\n"
+     ]
+    }
+   ],
+   "source": [
+    "str1=\"vangapandu harish naidu\"\n",
+    "str2=[]\n",
+    "count=0\n",
+    "for ele in str1:\n",
+    "    if str1.count(ele)>1:\n",
+    "        str2.append(ele)\n",
+    "l=list(set(str2))\n",
+    "m=str(l)\n",
+    "print(m)\n"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.6"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
