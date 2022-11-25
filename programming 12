@@ -1,0 +1,439 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "84af5807-7b09-454e-8d0b-69c480ec7a6d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "1. Write a Python program to Extract Unique values dictionary values?\n",
+    "2. Write a Python program to find the sum of all items in a dictionary?\n",
+    "3. Write a Python program to Merging two Dictionaries?\n",
+    "4. Write a Python program to convert key-values list to flat dictionary?\n",
+    "5. Write a Python program to insertion at the beginning in OrderedDict?\n",
+    "6. Write a Python program to check order of character in string using OrderedDict()?\n",
+    "7. Write a Python program to sort Python Dictionaries by Key or Value?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "1f0ec1a3-1fdf-40fc-ad1e-e5bde794ff1b",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#1. Write a Python program to Extract Unique values dictionary values?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "27125e63-1f2e-40d9-8b6d-96ff57f7f365",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "dict_values([1, 2, 3])"
+      ]
+     },
+     "execution_count": 1,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "dict1={\"ha\":1,\"hii\":2,\"ma\":3}\n",
+    "dict1.values()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "a8ab53fb-baf7-4b8c-8e0c-38009c08d31a",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "dict_keys(['ha', 'hii', 'ma'])"
+      ]
+     },
+     "execution_count": 2,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "dict1.keys()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "f4e6a619-c328-47a1-8a5b-77a49ad52b6a",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'ha': 1, 'hii': 2, 'ma': 3}"
+      ]
+     },
+     "execution_count": 3,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "dict1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "16df519f-3e1a-4879-b602-c9ccbbd48ee9",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#2. Write a Python program to find the sum of all items in a dictionary?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "eec1e287-d204-45f3-b83b-953afb775ad7",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "dict_items([('ha', 1), ('hii', 2), ('ma', 3)])"
+      ]
+     },
+     "execution_count": 4,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "dict1.items()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "7e32ddb3-b81b-4e3a-b91c-c2348675f73f",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'ha': 1, 'hii': 2, 'ma': 3}"
+      ]
+     },
+     "execution_count": 5,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "dict1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "42eb23e1-3ea8-432b-aa77-cdae55e9a008",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "6\n"
+     ]
+    }
+   ],
+   "source": [
+    "sum=0\n",
+    "for i in dict1.values():\n",
+    "    sum=sum+i\n",
+    "print(sum)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "81ea0687-dc13-44dd-9c7a-1262156ddd57",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#3. Write a Python program to Merging two Dictionaries?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "id": "64df6a2e-532e-423b-8843-6570d732ebe9",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{'a': 1, 'b': 2, 'c': 3, 'd': 4}\n"
+     ]
+    }
+   ],
+   "source": [
+    "dict2={\"a\":1,\"b\":2}\n",
+    "dict3={\"c\":3,\"d\":4}\n",
+    "dict2.update(dict3)\n",
+    "print(dict2)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "id": "d1ab7107-ca1a-4f18-b313-06da30b6684e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{'John': 15, 'Rick': 20, 'Misa': 12, 'Bonnie': 18, 'Matt': 16}\n"
+     ]
+    }
+   ],
+   "source": [
+    "def Merge(dict_1, dict_2):\n",
+    "\tresult = dict_1 | dict_2\n",
+    "\treturn result\n",
+    "\n",
+    "dict_1 = {'John': 15, 'Rick': 10, 'Misa' : 12 }\n",
+    "dict_2 = {'Bonnie': 18,'Rick': 20,'Matt' : 16 }\n",
+    "dict_3 = Merge(dict_1, dict_2)\n",
+    "print(dict_3)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "de74341a-3526-48dc-ae27-d422322a6bd2",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#4. Write a Python program to convert key-values list to flat dictionary?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 34,
+   "id": "2f3d9e82-6234-4902-93cf-fb4247ed7209",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<itertools.zip_longest object at 0x7fc7747008b0>\n",
+      "{1: 'a', 2: 'b', 3: 'c', 4: 'd', 5: None, 6: None, 7: None}\n"
+     ]
+    }
+   ],
+   "source": [
+    "from itertools import zip_longest\n",
+    "l1=[1,2,3,4,5,6,7]\n",
+    "l2=['a','b','c','d']\n",
+    "d1=zip_longest(l1,l2)\n",
+    "print (d1)\n",
+    "print (dict(d1))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "4a5819e5-2e74-4ec6-9795-d765b57e7a6c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#5. Write a Python program to insertion at the beginning in OrderedDict?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 36,
+   "id": "b5262e79-5f41-4382-b2ec-dbee3405f14d",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'John': 15, 'Rick': 20, 'Misa': 12, 'Bonnie': 18, 'Matt': 16}"
+      ]
+     },
+     "execution_count": 36,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "dict_3"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 41,
+   "id": "c01158b6-6e24-4b1a-aa13-93ab3fb0520f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{'John': 15, 'Rick': 20, 'Misa': 12, 'Bonnie': 18, 'Matt': 16, 'a': 123}\n"
+     ]
+    }
+   ],
+   "source": [
+    "dict_3[\"a\"]=(123)\n",
+    "print(dict_3)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "9c163d28-4699-42d9-8777-b99e99306a9c",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 44,
+   "id": "56190771-59d0-4d40-a44e-014b5043d170",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Resultant Dictionary :OrderedDict([('manjeet', '4'), ('akash', '4'), ('akshat', '1'), ('nikhil', '2')])\n"
+     ]
+    }
+   ],
+   "source": [
+    "from collections import OrderedDict\n",
+    "ini_dict1 = OrderedDict([('akshat', '1'), ('nikhil', '2')])\n",
+    "ini_dict2 = OrderedDict([(\"manjeet\", '4'), (\"akash\", '4')])\n",
+    "both = OrderedDict(list(ini_dict2.items()) + list(ini_dict1.items()))\n",
+    "print (\"Resultant Dictionary :\"+str(both))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "192d1b8d-154d-4511-97a1-5335ab529800",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#6. Write a Python program to check order of character in string using OrderedDict()?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 45,
+   "id": "d8041d35-fa31-40dd-8e6c-07a9ff3a84e0",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter string :  harish\n",
+      "Enter Pattern :  er\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "OrderedDict([('h', None), ('a', None), ('r', None), ('i', None), ('s', None)])\n",
+      "Pattern matched\n"
+     ]
+    }
+   ],
+   "source": [
+    "from collections import OrderedDict \n",
+    "  \n",
+    "def checkOrderofString(str, pattern): \n",
+    "      \n",
+    "    # create empty OrderedDict \n",
+    "    dict = OrderedDict.fromkeys(str) \n",
+    "    print(dict)   \n",
+    "    ptrlen = 0\n",
+    "    for key,value in dict.items(): \n",
+    "        \n",
+    "        if (key == pattern[ptrlen]): \n",
+    "            ptrlen = ptrlen + 1\n",
+    "          \n",
+    "        # check if we have traverse complete pattern string \n",
+    "        if (ptrlen == (len(pattern))):            \n",
+    "            return 'true'\n",
+    "  \n",
+    "    # if we come out from for loop that means order was mismatched \n",
+    "    return 'false'\n",
+    "  \n",
+    "\n",
+    "string = input(\"enter string : \")\n",
+    "pattern = input(\"Enter Pattern : \")\n",
+    "if checkOrderofString(string,pattern):\n",
+    "    print(\"Pattern matched\")\n",
+    "else:\n",
+    "    print(\"Pattern not matched\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "5f31d827-5589-44d0-abae-d51215ff7aa6",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#7. Write a Python program to sort Python Dictionaries by Key or Value?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "4a9d6663-3d30-450f-9633-5ec56304763f",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.6"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
