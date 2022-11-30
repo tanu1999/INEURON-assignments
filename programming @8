@@ -1,0 +1,379 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "3302cddf-9b33-43fb-930d-16de86b99872",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "1. Write a Python Program to Add Two Matrices?\n",
+    "2. Write a Python Program to Multiply Two Matrices?\n",
+    "3. Write a Python Program to Transpose a Matrix?\n",
+    "4. Write a Python Program to Sort Words in Alphabetic Order?\n",
+    "5. Write a Python Program to Remove Punctuation From a String?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "7a16fa45-7f27-43db-a80f-423ef4731402",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#1. Write a Python Program to Add Two Matrices?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "5f1f9c63-dacf-4365-83bd-14aeb6b633a7",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter no of rows : 3\n",
+      "enter no of colums : 3\n",
+      " 1\n",
+      " 2\n",
+      " 3\n",
+      " 4\n",
+      " 5\n",
+      " 6\n",
+      " 7\n",
+      " 8\n",
+      " 9\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "matrix\n",
+      "1 2 3 \n",
+      "4 5 6 \n",
+      "7 8 9 \n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      " 1\n",
+      " 2\n",
+      " 3\n",
+      " 4\n",
+      " 5\n",
+      " 6\n",
+      " 7\n",
+      " 8\n",
+      " 9\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "matrix\n",
+      "1 2 3 \n",
+      "4 5 6 \n",
+      "7 8 9 \n",
+      "\n",
+      "\n",
+      "\n",
+      "[[2, 4, 6], [8, 10, 12], [14, 16, 18]]\n",
+      "2 4 6 \n",
+      "8 10 12 \n",
+      "14 16 18 \n"
+     ]
+    }
+   ],
+   "source": [
+    "rows = int(input(\"enter no of rows :\"))\n",
+    "colums = int(input(\"enter no of colums :\"))\n",
+    "matrix1=[[int(input()) for i in range(rows)] for j in range(colums)]\n",
+    "print(\"matrix\")\n",
+    "for i in range(rows):\n",
+    "     for j in range(colums):\n",
+    "             print(matrix1[i][j],end=\" \")\n",
+    "     print()\n",
+    "matrix2=[[int(input()) for i in range(rows)] for j in range(colums)]\n",
+    "print(\"matrix\")\n",
+    "for i in range(rows):\n",
+    "     for j in range(colums):\n",
+    "             print(matrix2[i][j],end=\" \")\n",
+    "     print()\n",
+    "result=[[0 for i in range(rows)] for j in range(colums)]\n",
+    "for i in range(rows):\n",
+    "     for j in range(colums):\n",
+    "            result[i][j]=matrix1[i][j]+matrix2[i][j]\n",
+    "     print()\n",
+    "print(result)\n",
+    "for i in range(rows):\n",
+    "    for j in range(colums):\n",
+    "        print(result[i][j],end=\" \")\n",
+    "    print()\n",
+    "    \n",
+    "\n",
+    "        \n",
+    "            \n",
+    "             \n",
+    "             \n",
+    "             \n",
+    "             \n",
+    "                  \n",
+    "             \n",
+    "             \n",
+    "             \n",
+    "             "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "87f594b0-395b-461f-9ffb-e196e9656a9d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#2. Write a Python Program to Multiply Two Matrices?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "833c33fb-9427-4900-9be7-96b93b1560ea",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "21  24  27  \n",
+      "42  48  54  \n",
+      "63  72  81  \n"
+     ]
+    }
+   ],
+   "source": [
+    "result1=[[0 for i in range(rows)] for j in range(colums)]\n",
+    "for i in range(rows):\n",
+    "    for j in range(colums):\n",
+    "        for k in range(colums):\n",
+    "            result1[i][j]=matrix1[i][k]*matrix2[k][j]\n",
+    "        \n",
+    "for i in range(rows):\n",
+    "    for j in range(colums):\n",
+    "        print(result1[i][j],end=\"  \")\n",
+    "    print()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "11121d35-4826-464e-a14b-1bc17cd8875f",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#3. Write a Python Program to Transpose a Matrix?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "49295123-9c1e-4337-b088-356bf04d2031",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1 4 7 \n",
+      "2 5 8 \n",
+      "3 6 9 \n"
+     ]
+    }
+   ],
+   "source": [
+    "for j in range(colums):\n",
+    "    for i in range(rows):\n",
+    "        print(matrix1[i][j],end=\" \")\n",
+    "    print()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "57c16c09-2bb9-429a-a123-1f56a5041588",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#4. Write a Python Program to Sort Words in Alphabetic Order?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "939aa0c8-b504-4dff-91ad-e2e5a35dfa4f",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['f', 'h', 'a', 'd']"
+      ]
+     },
+     "execution_count": 7,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "c2740faf-c98b-45ec-a464-4251df5b4a32",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['a', 'd', 'f', 'h']"
+      ]
+     },
+     "execution_count": 8,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "sorted(l)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "id": "d02f227a-4e04-44a1-8280-bf517cbc9f69",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[' ', ' ', ' ', ' ', ' ', 'a', 'a', 'a', 'a', 'a', 'a', 'd', 'd', 'e', 'g', 'h', 'h', 'i', 'i', 'i', 'm', 'm', 'n', 'n', 'n', 'n', 'p', 'r', 's', 's', 'u', 'u', 'v', 'y'] "
+     ]
+    }
+   ],
+   "source": [
+    "l=\"my name is vangapandu harish naidu\"\n",
+    "m=sorted(l)\n",
+    "print(m,end=\" \")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "483935a3-bb86-453b-859e-8950b5f17281",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'harish is my naidu name vangapandu'"
+      ]
+     },
+     "execution_count": 16,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "def lower(s):\n",
+    "    w=s.split(\" \")\n",
+    "    for i in range(len(w)):\n",
+    "        w[i]=w[i].lower()\n",
+    "    w.sort()\n",
+    "    return ' '.join(w)\n",
+    "s=\"my name is vangapandu harish naidu\"\n",
+    "lower(s)\n",
+    "        \n",
+    "        "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "a1e8b4c7-6f91-437f-a0fe-b9928121a975",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#5. Write a Python Program to Remove Punctuation From a String?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "977cc810-9b3a-4aa1-b94f-f9475d5c7e7b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter a string : mh%#^ and $gkg&*\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "mh and gkg\n"
+     ]
+    }
+   ],
+   "source": [
+    "punctuations = '''!()-[]{};:'\"\\,<>./?@#$%^&*_~'''\n",
+    "my_str=input(\"enter a string :\")\n",
+    "my_str2=\"\"\n",
+    "for char in my_str:\n",
+    "    if char not in punctuations:\n",
+    "        my_str2=my_str2+char\n",
+    "print(my_str2)\n",
+    "        "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "84ce5d5c-d4f5-450f-8300-8dc9850890f0",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.6"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
