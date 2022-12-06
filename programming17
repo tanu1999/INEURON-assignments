@@ -1,0 +1,314 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "852203da-db93-4e35-a2a7-fd42d7048554",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(1, 10, 2) 30\n",
+      "(2, 10, 3) 18\n",
+      "(3, 10, 20) 0\n"
+     ]
+    }
+   ],
+   "source": [
+    "def function(a,b,c):\n",
+    "    sum=0\n",
+    "    for i in range(a,b+1):\n",
+    "        if i%c==0:\n",
+    "            sum=sum+i\n",
+    "    print(f\"{a,b,c} {sum}\")\n",
+    "function(1,10,2)\n",
+    "function(2,10,3)\n",
+    "function(3,10,20)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "9176cd72-2f31-4ca8-97e7-65c66e120f6e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      " 2>3\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "2>3 False\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      " 4<7\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "4<7 True\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      " 3==4\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "3==4 False\n"
+     ]
+    }
+   ],
+   "source": [
+    "def function():\n",
+    "    var_1=input()\n",
+    "    var_2=eval(var_1)\n",
+    "    print(f\"{var_1} {var_2}\")\n",
+    "for i in range(3):\n",
+    "    function()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "3fba7340-cd73-46f9-a4c3-9759136c86d4",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      " harish\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "h#r#sh\n"
+     ]
+    }
+   ],
+   "source": [
+    "n=input()\n",
+    "l=str(n)\n",
+    "vowls=[\"a\",\"e\",\"i\",\"o\",\"u\"]\n",
+    "re=\"#\"\n",
+    "for i in l:\n",
+    "    if i in vowls:\n",
+    "        l=l.replace(i,re)\n",
+    "print(l)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "d82ee2cf-485a-4739-961b-37ce54db7343",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      " harish\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "h#r#sh\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      " mahesh\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "m#h#sh\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      " narsing\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "n#rs#ng\n"
+     ]
+    }
+   ],
+   "source": [
+    "def function():\n",
+    "    n=input()\n",
+    "    l=str(n)\n",
+    "    vowls=[\"a\",\"e\",\"i\",\"o\",\"u\"]\n",
+    "    for i in l:\n",
+    "        if i in vowls:\n",
+    "            l=l.replace(i,\"#\")\n",
+    "    print(l)\n",
+    "for i in range(3):\n",
+    "    function()\n",
+    "    \n",
+    "    \n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "id": "8779b72c-c85c-42f5-a75b-10804a8ed901",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "factorial(5) 120\n",
+      "factorial(6) 720\n",
+      "factorial(7) 5040\n",
+      "factorial(8) 40320\n"
+     ]
+    }
+   ],
+   "source": [
+    "def factorial(num):\n",
+    "    if num==1 or num==1:\n",
+    "        return 1\n",
+    "    else:\n",
+    "        return num*factorial(num-1)\n",
+    "print(f\"factorial(5)\", factorial(5))\n",
+    "print(f\"factorial(6)\", factorial(6))\n",
+    "print(f\"factorial(7)\", factorial(7))\n",
+    "print(f\"factorial(8)\", factorial(8))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "ff5b6de2-ceeb-4dcc-a70b-8690afb251b2",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter the String_1:  harish\n",
+      "Enter the String_2:  mahesh\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Hamning Distance b/w harish and mahesh ➞ 3\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter the String_1:  narsing\n",
+      "Enter the String_2:  dinesh\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Both Strings Must be of Same Length\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter the String_1:  sravan\n",
+      "Enter the String_2:  naveen'\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Both Strings Must be of Same Length\n"
+     ]
+    }
+   ],
+   "source": [
+    "def genHamDistance():\n",
+    "    in_string_1 = input('Enter the String_1: ')\n",
+    "    in_string_2 = input('Enter the String_2: ')\n",
+    "    if len(in_string_1) == len(in_string_2):\n",
+    "        count = 0\n",
+    "        for i in range(len(in_string_1)):\n",
+    "            if in_string_1[i] != in_string_2[i]:\n",
+    "                count = count+1\n",
+    "        print(f'Hamning Distance b/w {in_string_1} and {in_string_2} ➞ {count}')\n",
+    "    else:\n",
+    "        print('Both Strings Must be of Same Length')\n",
+    "\n",
+    "for x in range(3):\n",
+    "    genHamDistance()\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "b5bd5b24-7a10-462c-b7e4-b47892424ebd",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.6"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
