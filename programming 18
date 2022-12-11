@@ -1,0 +1,299 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "7cd5c350-191e-46aa-ba59-7dc8b268ce80",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "d6988c1f-53dd-44fc-92f4-7dd45cf732d7",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1 2 2 3 "
+     ]
+    }
+   ],
+   "source": [
+    "def function():\n",
+    "    l=[1,2,\"1\",2,3,\"v\"]\n",
+    "    for i in l:\n",
+    "        if type(i)==int:\n",
+    "            print(i,end=\" \")\n",
+    "function()\n",
+    "        \n",
+    "        "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "id": "23bd9427-4d4d-407a-8fb1-01092e0e7a6b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      " \"hello world\"\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "\"dlrow olleh\"\n"
+     ]
+    }
+   ],
+   "source": [
+    "l=input()\n",
+    "print(l[::-1])\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 38,
+   "id": "28cd5275-9595-4927-b8f2-387a801f3e48",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      " harish\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "hsirah\n"
+     ]
+    }
+   ],
+   "source": [
+    "n=input()\n",
+    "l=list(n)\n",
+    "print(\"\".join(reversed(l)))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "id": "955cbc46-92ea-4d76-be26-020f3135cbdf",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "[2, 3, 4, 5]\n",
+      "6\n"
+     ]
+    }
+   ],
+   "source": [
+    "l=[1,2,3,4,5,6]\n",
+    "print(l[0])\n",
+    "print(l[1:-1])\n",
+    "print(l[-1])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 60,
+   "id": "eb440031-0dd2-49cb-aded-43bb206a294e",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "1"
+      ]
+     },
+     "execution_count": 60,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "lst = [1, 2, 3, 4, 5, 6]\n",
+    "first ,*middle,last = lst\n",
+    "first"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 61,
+   "id": "eedf16fb-364d-4a71-9801-36d1b8a15e28",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[2, 3, 4, 5]"
+      ]
+     },
+     "execution_count": 61,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "middle"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 62,
+   "id": "dbf2a7e4-f945-433c-b0db-a3813977155e",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "6"
+      ]
+     },
+     "execution_count": 62,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "last"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 45,
+   "id": "7c2aa346-fad8-4d35-8665-e273a65f2ca9",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "120\n",
+      "6\n",
+      "1\n",
+      "1\n"
+     ]
+    }
+   ],
+   "source": [
+    "def factorial(num):\n",
+    "    \n",
+    "    if num==0 or num==1:\n",
+    "        return 1\n",
+    "    else:\n",
+    "        return num*factorial(num-1)\n",
+    "    \n",
+    "print(factorial(5))\n",
+    "print(factorial(3))\n",
+    "print(factorial(1))\n",
+    "print(factorial(0))\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "a36d7664-9af9-4eb3-a284-80b521fec8d4",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "move_to_end([1, 3, 2, 4, 4, 1], 1) ➞ [3, 2, 4, 4, 1, 1]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 74,
+   "id": "a72f3eb5-f445-4926-89ac-5cfa7eab5e82",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "7 8 4 1 2 3 9 "
+     ]
+    }
+   ],
+   "source": [
+    "def move_to_end(array, toMove):\n",
+    "     \n",
+    "    i = 0\n",
+    " \n",
+    "    # Mark the right pointer\n",
+    "    j = len(array) - 1\n",
+    "  \n",
+    "    # Iterate untill left pointer\n",
+    "    # crosses the right pointer\n",
+    "    while (i < j):\n",
+    "  \n",
+    "        while (i < j and array[j] == toMove):\n",
+    "  \n",
+    "            # decrement right pointer\n",
+    "            j-=1\n",
+    "  \n",
+    "        if (array[i] == toMove):\n",
+    "  \n",
+    "            # swap the two elements\n",
+    "            # in the array\n",
+    "            array[i], array[j] = array[j] , array[i]\n",
+    "  \n",
+    "        # increment left pointer\n",
+    "        i += 1\n",
+    "    return array\n",
+    "arr = [7, 8, 9, 1, 2, 3, 4]\n",
+    "k = 9\n",
+    "ans = move_to_end(arr, k)\n",
+    "for i in range(len(arr)):\n",
+    "    print(ans[i] ,end= \" \")\n",
+    "\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "a731280c-d54d-40e7-81e7-53b2307e0da5",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.6"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
