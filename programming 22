@@ -1,0 +1,225 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "25bf35d4-d986-4cfd-bb13-319d926d08fe",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "a65ebace-e905-4d35-a4f5-44ced750e232",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[3, 6, 9]\n",
+      "[8]\n",
+      "[]\n"
+     ]
+    }
+   ],
+   "source": [
+    "def function(a,b,c):\n",
+    "    l=[]\n",
+    "    for i in range(a,b+1):\n",
+    "        if i%c==0:\n",
+    "            l.append(i)\n",
+    "    print(l)\n",
+    "function(1,10,3)\n",
+    "function(7,9,2)\n",
+    "function(15,20,7)\n",
+    "\n",
+    "           \n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "50a92905-ae7c-41f4-947d-1225c17e5b4c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "c234f51b-c09d-4153-a536-f927bde2aeb2",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "False\n"
+     ]
+    }
+   ],
+   "source": [
+    "def function(a,b):\n",
+    "    for ele in a:\n",
+    "        if ele in b:\n",
+    "            print(\"True\")\n",
+    "            break\n",
+    "    else:\n",
+    "        print(\"False\")\n",
+    "function([1,4],[2,3])\n",
+    "            "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "2a4ab246-0ff6-498f-886e-1ab9c7f6202f",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#3"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "id": "7a845e4c-5851-46b6-8aac-51b79c7aa05f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['Dinesh', 'Harish', 'Narsing']\n",
+      "DHN"
+     ]
+    }
+   ],
+   "source": [
+    "n=input\n",
+    "l=[\"Harish\",\"Narsing\",\"Dinesh\"]\n",
+    "m=sorted(l)\n",
+    "print(m)\n",
+    "for i in range(len(l)):\n",
+    "    print(m[i][0],end=\"\")\n",
+    "\n",
+    "\n",
+    "   \n",
+    "   "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "1da8f9bd-c940-4395-bc5c-e71e4ce36cad",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "ba541ee7-ce64-4120-8b21-e00376395af6",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      " narsing\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "n=input()\n",
+    "l=list(n)\n",
+    "for ele in l:\n",
+    "    if l.count(ele)>=2:\n",
+    "        print(\"True\")\n",
+    "        break\n",
+    "else:\n",
+    "    print(\"False\")\n",
+    "    \n",
+    "    \n",
+    "\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "5df59fa8-6946-4f0a-8c5d-7e73b7dc585f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      " abc\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "abc\n",
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "n=input()\n",
+    "l=list(n)\n",
+    "m=\"\".join(sorted(l))\n",
+    "if n==m:\n",
+    "    print(\"True\")\n",
+    "else:\n",
+    "    print(\"Falase\")\n",
+    "   "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "4d2b3bec-f8d3-43c4-b418-2e96095f642f",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.6"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
