@@ -1,0 +1,224 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "b60c349d-3258-4fe7-a636-5036af623d28",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "39f3632a-f55b-4f45-92fd-e6aa3af2dd32",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "def symmetric(n):\n",
+    "    l=list(str(n))\n",
+    "    m=\"\".join(reversed(l))\n",
+    "    if n==m:\n",
+    "        print(\"True\")\n",
+    "    else:\n",
+    "        print(\"False\")\n",
+    "symmetric(str(121))\n",
+    "    \n",
+    "    \n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "103deb45-f256-4d2e-84ca-2b0f68a8b35f",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 74,
+   "id": "e9a5ff00-24e6-45d5-b174-7a605e2e6fc4",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['2', '3']\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "6"
+      ]
+     },
+     "execution_count": 74,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "def multiply_nums(s):\n",
+    "    s = s.split(',')\n",
+    "    print(s)\n",
+    "    sum = 1\n",
+    "    for i in s:\n",
+    "        sum = sum * int(i)\n",
+    "    return sum\n",
+    "multiply_nums('2,3')\n",
+    "    \n",
+    "    \n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "89f3754a-a496-4c56-9c0b-c6f33ac0402e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#3"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 84,
+   "id": "d0f20f1b-e419-47c0-9ad8-c47da249522b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['1', '2', '3', '4']\n",
+      "14916"
+     ]
+    }
+   ],
+   "source": [
+    "def function(n):\n",
+    "    l=list(str(n))\n",
+    "    print(l)\n",
+    "\n",
+    "    for i in range(len(l)):\n",
+    "        print(int(l[i])*int(l[i]),end=\"\")\n",
+    "function(1234)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "592d52e3-62ef-4fb0-b1a7-05bf2437e23a",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#4"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 62,
+   "id": "5b089be7-d66e-41e9-bb02-e452c5a1b153",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 2, 3, 4, 6, 25]"
+      ]
+     },
+     "execution_count": 62,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "def setify(lst):\n",
+    "    return list(set(lst))\n",
+    "setify([1,2,3,4,2,25,6])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 103,
+   "id": "911e9432-4d8c-4a19-952a-48006daab639",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<class 'int'>\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "3"
+      ]
+     },
+     "execution_count": 103,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "def mean(n): \n",
+    "    N = len(str(n))\n",
+    "    print(type(n))\n",
+    "    sum = mean = 0\n",
+    "    \n",
+    "    for digit in str(n):\n",
+    "        sum += int(digit)       \n",
+    "    return int(sum/N)\n",
+    "\n",
+    "mean(42)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "dc71d924-8882-4202-b1f2-ad2cc67273fc",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.6"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
