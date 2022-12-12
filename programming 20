@@ -1,0 +1,206 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "5eb79a61-5aae-4d82-9ae9-1b281bedd91e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 2, 3]\n"
+     ]
+    }
+   ],
+   "source": [
+    "def function(l):\n",
+    "    n=[]\n",
+    "    for i in l:\n",
+    "        if type(i)==int:\n",
+    "            n.append(i)\n",
+    "    print(n)\n",
+    "function([1,2,3,\"8\"])\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "bb80cfbe-d1de-49ea-880f-e5c4a7b8013a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[0, 1, 2, 3]\n"
+     ]
+    }
+   ],
+   "source": [
+    "def function(l):\n",
+    "    m=[]\n",
+    "    for i in range(len(l)):\n",
+    "        m.append(i+l[i])\n",
+    "    print(m)\n",
+    "function([0,0,0,0])\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "1e7e42b5-3d0f-4bb3-bed6-8533182ccd37",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#3volume of cone"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "fce30bd3-480a-42d6-bdac-2f59bd324b0f",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "12.566370614359172"
+      ]
+     },
+     "execution_count": 12,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "import math\n",
+    "def volume(r,h):\n",
+    "    result=(1/3)*math.pi*r*r*h\n",
+    "    return result\n",
+    "volume(2,3)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "id": "61b023c7-44ed-4996-b18a-aaaf334223b5",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      " 215\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "23220\n"
+     ]
+    }
+   ],
+   "source": [
+    "def function():\n",
+    "    n=int(input())\n",
+    "    count=0\n",
+    "    for i in range(1,n+1):\n",
+    "        count=count+i\n",
+    "    print(count)\n",
+    "function()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "8fcb77cf-1bef-45c2-a40e-c3f71cda3f9f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      " 215\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "23220\n"
+     ]
+    }
+   ],
+   "source": [
+    "n=int(input())\n",
+    "sum=n*((n+1)/2)\n",
+    "print(int(sum))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "d7b291be-77e2-42de-a471-e7d46276bbbf",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "TypeError",
+     "evalue": "'int' object is not callable",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+      "Cell \u001b[0;32mIn [12], line 6\u001b[0m\n\u001b[1;32m      3\u001b[0m     sum_Of_list \u001b[38;5;241m=\u001b[39m \u001b[38;5;28msum\u001b[39m(lst)\n\u001b[1;32m      4\u001b[0m     \u001b[38;5;28;01mreturn\u001b[39;00m total \u001b[38;5;241m-\u001b[39m sum_Of_list\n\u001b[0;32m----> 6\u001b[0m \u001b[38;5;28mprint\u001b[39m(\u001b[43mmissing_num\u001b[49m\u001b[43m(\u001b[49m\u001b[43m[\u001b[49m\u001b[38;5;241;43m1\u001b[39;49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[38;5;241;43m2\u001b[39;49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[38;5;241;43m3\u001b[39;49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[38;5;241;43m4\u001b[39;49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[38;5;241;43m6\u001b[39;49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[38;5;241;43m7\u001b[39;49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[38;5;241;43m8\u001b[39;49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[38;5;241;43m9\u001b[39;49m\u001b[43m,\u001b[49m\u001b[43m \u001b[49m\u001b[38;5;241;43m10\u001b[39;49m\u001b[43m]\u001b[49m\u001b[43m)\u001b[49m)\n",
+      "Cell \u001b[0;32mIn [12], line 2\u001b[0m, in \u001b[0;36mmissing_num\u001b[0;34m(lst)\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[38;5;28;01mdef\u001b[39;00m \u001b[38;5;21mmissing_num\u001b[39m(lst):\n\u001b[0;32m----> 2\u001b[0m     total \u001b[38;5;241m=\u001b[39m \u001b[38;5;28;43msum\u001b[39;49m\u001b[43m(\u001b[49m\u001b[43m[\u001b[49m\u001b[43mx\u001b[49m\u001b[43m \u001b[49m\u001b[38;5;28;43;01mfor\u001b[39;49;00m\u001b[43m \u001b[49m\u001b[43mx\u001b[49m\u001b[43m \u001b[49m\u001b[38;5;129;43;01min\u001b[39;49;00m\u001b[43m \u001b[49m\u001b[38;5;28;43mrange\u001b[39;49m\u001b[43m(\u001b[49m\u001b[38;5;241;43m11\u001b[39;49m\u001b[43m)\u001b[49m\u001b[43m]\u001b[49m\u001b[43m)\u001b[49m\n\u001b[1;32m      3\u001b[0m     sum_Of_list \u001b[38;5;241m=\u001b[39m \u001b[38;5;28msum\u001b[39m(lst)\n\u001b[1;32m      4\u001b[0m     \u001b[38;5;28;01mreturn\u001b[39;00m total \u001b[38;5;241m-\u001b[39m sum_Of_list\n",
+      "\u001b[0;31mTypeError\u001b[0m: 'int' object is not callable"
+     ]
+    }
+   ],
+   "source": [
+    "def missing_num(lst):\n",
+    "    total = sum([x for x in range(11)])\n",
+    "    sum_Of_list = sum(lst)\n",
+    "    return total - sum_Of_list\n",
+    "\n",
+    "print(missing_num([1, 2, 3, 4, 6, 7, 8, 9, 10]))\n",
+    "    \n",
+    "\n",
+    "    \n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "cbb2a55a-bee4-4fff-b668-5a29afd85cbc",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.6"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
