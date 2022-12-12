@@ -1,0 +1,257 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "06f9f50e-dabe-4c57-ac79-32ce08125c12",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#1double_char(&quot;String&quot;) ➞ &quot;SSttrriinngg&quot;"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "40c6a26f-7436-4dfc-a066-912f39847e0e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      " harish\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "hhaarriisshh"
+     ]
+    }
+   ],
+   "source": [
+    "n=input()\n",
+    "l=list(n)\n",
+    "for i in l:\n",
+    "    print(i+i,end=\"\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "9a5468a6-f3da-4987-a559-1146c9d4def1",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "e4ebc715-02a4-4224-b2e2-bef0eef4349f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "False\n",
+      "True\n",
+      "True\n",
+      "False\n"
+     ]
+    }
+   ],
+   "source": [
+    "def reverse(a):\n",
+    "    if a==True or a==1:\n",
+    "        print(\"False\")\n",
+    "    elif a==False or a==0:\n",
+    "        print(\"True\")\n",
+    "reverse(True)\n",
+    "reverse(False)\n",
+    "reverse(0)\n",
+    "reverse(1)\n",
+    "\n",
+    "        \n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "17246952-5532-4eac-bd91-404ae24d5451",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#3"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "b871a0f1-4f87-4459-92e8-f8f2827a7cda",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0.008\n"
+     ]
+    }
+   ],
+   "source": [
+    "def thickness(n):\n",
+    "    print(2**n*t)\n",
+    "t=0.0005\n",
+    "thickness(4)\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "04dd1d2c-02c2-4830-a0a8-f3ba2b190be5",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0.001m\n",
+      "0.008m\n",
+      "1048.576m\n"
+     ]
+    }
+   ],
+   "source": [
+    "def num_layers(n):\n",
+    "    thickness = 0.5\n",
+    "    for _ in range(n):\n",
+    "        thickness *= 2\n",
+    "    \n",
+    "    return str(thickness / 1000)+'m' \n",
+    "\n",
+    "print(num_layers(1))\n",
+    "print(num_layers(4))\n",
+    "print(num_layers(21))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "5b286287-bef8-4f85-a8fd-318dab8b57e3",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#4"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 43,
+   "id": "ce35ccee-c590-4037-b47c-1a73497ea1d3",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      " HaRiSh\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[0, 2, 4]\n"
+     ]
+    }
+   ],
+   "source": [
+    "n=input()\n",
+    "l=list(n)\n",
+    "n=[]\n",
+    "m=\"QWERTYUIOPLKHJGFDSAZXCVBNM\"\n",
+    "for i in range(len(l)):\n",
+    "    if l[i] in m:\n",
+    "        n.append(i)\n",
+    "print(n)\n",
+    "        "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "a1ea71ff-f3a2-4e35-88a8-2b3f102f4d9c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#5"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 42,
+   "id": "f54ec899-4f21-48aa-8286-2d0e1d04a28f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      " 13\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 3, 5, 7, 9, 11, 13]\n"
+     ]
+    }
+   ],
+   "source": [
+    "n=int(input())\n",
+    "l=[]\n",
+    "for i in range(1,n+1):\n",
+    "    if(i%2==1):\n",
+    "        l.append(i)\n",
+    "print(l)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "1f43aac2-0d9b-49e4-b027-b7515cff9b25",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.6"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
