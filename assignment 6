@@ -1,0 +1,248 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "2bc016d5-69a3-45bd-bb71-d261cb8fb617",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#1. What are escape characters, and how do you use them?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "80dea1e6-52d3-463d-95ef-c2d65829df59",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Escape characters represent characters in string values that would otherwise be difficult or\n",
+    "impossible to type into code. we can use the backslash character to escape a single character or symbol\n",
+    "example: \\t, \\n\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "6ff72532-063c-4c44-8577-6478a145e11a",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#2. What do the escape characters n and t stand for?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "43b0994a-6fef-4f17-9acd-b49422e80a02",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "\\n is a newline, \\t is a tab"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "31bb0b0c-a32a-4f98-a8b5-11dd967f40bd",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#3. What is the way to include backslash characters in a string?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "ce1392a3-6bdf-4091-8a15-e57ac624cd79",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "The \\\\ escape character will represent the backslash character in a string\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "4a9df2f6-5d0e-4a9f-9e18-5293676096d6",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#4.The string \"Howl's Moving Castle\" is a correct value.\n",
+    "#Why isn't the single quote character in the word Howl's not escaped a problem ?\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "ab7d80dc-c192-43ab-9086-1462fe4d8be0",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "The string \"Howl's Moving Castle\" escaped the problem because it is wrapped inside double quotes.\n",
+    "if its wrapped inside single quotes then we have to use escape character \\' to show single quote in the \n",
+    "final output\n",
+    "'Howl\\'s Moving Castle' -> 'Howl's Moving Castle'"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "82246a7d-c2e6-4d06-939b-7324d3dc8cfe",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#5.How do you write a string of newlines if you don't want to use the n character?\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "1468d1d4-2617-4e40-9dbe-58ed75a4ec38",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    " Multiline string allow you to use newlines in string without the \\n escape character\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "1321672f-c119-42f4-a322-6f59ba4b3763",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'lo, world!'"
+      ]
+     },
+     "execution_count": 2,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#6.What are the values of the given expressions ?\n",
+    "'Hello, world!'[1]\n",
+    "'Hello, world!'[0:5]\n",
+    "'Hello, world!'[:5]\n",
+    "'Hello, world!'[3:]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "d1b97179-ac61-4abd-9c6a-2d5c4b4c9a84",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "'Hello, world!'[1] -> 'e'\n",
+    "'Hello, world!'[0:5] -> 'Hello'\n",
+    "'Hello, world!'[:5] -> 'Hello'\n",
+    "'Hello, world!'[3:] -> 'lo, world!'"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "8104c90b-badd-457d-a842-4e86bbe3d569",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#7.What are the values of the following expressions ?\n",
+    "'Hello'.upper()\n",
+    "'Hello'.upper().isupper()\n",
+    "'Hello'.upper().lower()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "4f1eebf5-95f2-4907-9e7c-4922161ecbe3",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "'Hello'.upper() -> 'HELLO'\n",
+    "'Hello'.upper().isupper() -> True\n",
+    "'Hello'.upper().lower() -> 'hello'\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "eb015647-8e97-49bd-8e27-5a1a5664eb46",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['Remember,', 'remember,', 'the', 'fifith', 'of', 'July.']\n",
+      "There-can-only-one\n"
+     ]
+    }
+   ],
+   "source": [
+    "#8.What are the values of the following expressions ?\n",
+    "print('Remember, remember, the fifith of July.'.split())\n",
+    "print('-'.join('There can only one'.split()))\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "cb328d68-4d0b-42da-b3dd-992efb8203f7",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#9.What are the methods for right-justifying, left-justifying and centering a string ?\n",
+    "Ans: The rjust(),ljust(),center() string methods, respectively\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "2861f9fb-f4a5-455f-84a1-3a28b1f63057",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "d11e1477-84f9-4cc9-a14f-f74c46524007",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.6"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
